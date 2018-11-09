@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">PlatformAdapterDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+	<string name="btn_close">关闭</string>
+	<string name="error_nlp_result_empty">语义结果错误:结果为空</string>
+</resources>

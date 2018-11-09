@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="volume_bg">#ff717171</color>
+    <color name="volume_progress">#ff00ccff</color>
+    <color name="white">#ffffff</color>
+</resources>

@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhonghong.voiceadapter"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> 
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    
+
+    <application
+        android:name="com.zhonghong.iflyplatformadapter.PlatformAdapterApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="com.iflytek.platformservice.PlatformService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.iflytek.platformservice.PlatformService" />
+            </intent-filter>
+        </service>
+        
+         <receiver android:name="com.zhonghong.receive.VoiceBootReceive" >
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        
+        <service 
+            android:name="com.zhonghong.service.VoiceControlService">
+            <intent-filter >
+                 <action android:name="com.zhonghong.voice.service.VoiceControlService" />
+            </intent-filter>
+        </service>
+        
+        <provider   
+             android:name="com.zhonghong.focus.VoiceAudioFocusProvider"   
+             android:authorities="com.zhonghong.audioservice.provider"  
+             android:exported="true"
+             />
+        
+    </application>
+
+</manifest>

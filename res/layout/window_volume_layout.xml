@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/window_volume_bar_layout"
+    android:layout_width="1224px"
+    android:layout_height="wrap_content"
+    android:background="@drawable/window_volume_bg">
+
+            <ImageView
+                android:id="@+id/window_volume_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_window_volume"/>
+
+            <TextView
+                android:id="@+id/window_volume_value"
+                android:layout_toRightOf="@+id/window_volume_icon"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="36px" />
+
+            <SeekBar
+                android:id="@+id/window_volume_bar"
+                android:layout_toRightOf="@id/window_volume_value"
+                android:layout_marginLeft="16dp"
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:max="32"
+                android:progress="10"
+                android:maxHeight="10dp"
+                android:minHeight="10dp"
+                android:thumb="@drawable/thumbpng"
+                android:progressDrawable="@drawable/window_volume_seek_style"/>
+</RelativeLayout>
