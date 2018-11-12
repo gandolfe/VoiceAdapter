@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="libs/framework.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/McuService.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/platformadapter.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/platformservicejar.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/kwmusic-autosdk-v1.8.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/ttsserviceadapter.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/zhcancommon.jar"/>
+	<classpathentry exported="true" kind="lib" path="extralib/serviceconnect_v20180316_1129.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/custommvw1.1.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/android4.4.2"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
